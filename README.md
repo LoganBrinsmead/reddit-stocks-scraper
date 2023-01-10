@@ -1,3 +1,5 @@
+# Reddit Stocks Scraper
+
 This is a scraper that will find the last most top mentioned stocks in the past 24 hours across four investing subreddits:
 
 - r/investing
@@ -7,7 +9,7 @@ This is a scraper that will find the last most top mentioned stocks in the past 
 
 The scraper then writes these stock tickers, the times they are mentioned, and the sentiment that the user felt about the stock using VADER (Valence Aware Dictionary and sEntiment Reasoner) to a MongoDB database.
 
-How to use:
+# How to use
 1. You must have the tickersSet.pickle file included in this repository in the same directory level as your scraper.py.
 2. Change the MongoDB client (on line 25, change the pyMongo client to whatever your client address is, on MongoDB Atlas or otherwise.)
 3. Run the script.
