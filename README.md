@@ -16,7 +16,7 @@ The scraper then writes these stock tickers, the times they are mentioned, and t
 2. Change the MongoDB client (on line 25, change the pyMongo client to whatever your client address is, on MongoDB Atlas or otherwise.)
 3. Setup a developer account on Reddit so that you are able to use PRAW, and update the reddit object on line 36 to include your credentials. This tutorial: https://www.youtube.com/watch?v=gIZJQmX-55U is fantastic for learning how to get registered and ready to use PRAW.
 4. Run the script.
-5. Optional: Setup an automated job so that this script runs every night at 12AM (I personally used cron on Ubuntu) so that this script runs every night at 12AM, keeping your data up-to-date. 
+5. Optional: Setup an automated job so that this script runs every night at 12AM (I personally used cron on Ubuntu) and keeps your data up-to-date. 
 
 Your MongoDB database will now be populated with stock mention data :)
 
