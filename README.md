@@ -37,3 +37,5 @@ An example of a document that this script writes:
     ]
   },
 ```
+### What is tickersSet.pickle?
+This is a "pickled" hash-set of all stock tickers from the NASDAQ website. "Pickled" means that it is a serialized Python object structure, and that pickle file already contains all of the stock tickers. This is to improve on runtime, so that we don't have to loop through and populate our set with every run of the script, and it is a hash-set so that we can take advantage of the constant lookup time, which also drastically cuts down on our runtime.
